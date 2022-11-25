@@ -38,7 +38,7 @@ void FillArray(int[]collection)
         index++;
     }
 }
-void PrintArray(int[] col)
+/*void PrintArray(int[] col)
 {
     int count = col.Length;
     int position = 0;
@@ -48,6 +48,19 @@ void PrintArray(int[] col)
         position++;
     }
 }
-
+*/
+void PrintArray(int[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+        if (i < array.Length - 1)
+        {
+            Console.Write(", ");
+        }
+    }
+    Console.WriteLine("]");
+}
 FillArray(array);
 PrintArray(array);
