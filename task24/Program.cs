@@ -3,7 +3,7 @@
 4 -> 10
 8 -> 36
 */
-int SumOfRange(int start, int finish)
+int sumOfRange(int start, int finish)
 {
     int sum = 0;
     for (int i = start; i <= finish; i++)
@@ -23,5 +23,5 @@ int getNumberFromUser(string message)
 }
 
 int userNumber = getNumberFromUser("Введите А для подсчета суммы 1...А");
-int sum = SumOfRange(1, userNumber);
+int sum = sumOfRange(1, userNumber);
 Console.WriteLine($"Сумма чисел от 1...{userNumber} = {sum}");
